@@ -102,103 +102,6 @@
       <a name="size" val="30"/>
     </tool>
   </toolbar>
-  <circuit name="main">
-    <a name="appearance" val="classic"/>
-    <comp lib="1" loc="(230,390)" name="Clock"/>
-    <comp lib="1" loc="(690,380)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="radix" val="10unsigned"/>
-      <a name="width" val="16"/>
-    </comp>
-    <comp lib="1" loc="(690,390)" name="Splitter">
-      <a name="appear" val="center"/>
-      <a name="facing" val="south"/>
-      <a name="fanout" val="16"/>
-      <a name="incoming" val="16"/>
-    </comp>
-    <comp lib="6" loc="(230,310)" name="DipSwitch">
-      <a name="facing" val="east"/>
-      <a name="label" val="Enable"/>
-      <a name="labelloc" val="west"/>
-      <a name="number" val="2"/>
-    </comp>
-    <comp lib="6" loc="(230,360)" name="Button">
-      <a name="label" val="Reset"/>
-      <a name="labelloc" val="west"/>
-    </comp>
-    <comp lib="6" loc="(270,500)" name="7-Segment Display"/>
-    <comp lib="6" loc="(330,500)" name="7-Segment Display"/>
-    <comp lib="6" loc="(390,500)" name="7-Segment Display"/>
-    <comp lib="6" loc="(450,500)" name="7-Segment Display"/>
-    <comp lib="6" loc="(510,500)" name="7-Segment Display"/>
-    <comp lib="8" loc="(270,500)" name="BCD_to_7_Segment_decoder"/>
-    <comp lib="8" loc="(330,500)" name="BCD_to_7_Segment_decoder"/>
-    <comp lib="8" loc="(390,500)" name="BCD_to_7_Segment_decoder"/>
-    <comp lib="8" loc="(450,500)" name="BCD_to_7_Segment_decoder"/>
-    <comp lib="8" loc="(510,500)" name="BCD_to_7_Segment_decoder"/>
-    <comp loc="(310,450)" name="Digit Register"/>
-    <comp loc="(370,450)" name="Digit Register"/>
-    <comp loc="(430,450)" name="Digit Register"/>
-    <comp loc="(490,450)" name="Digit Register"/>
-    <comp loc="(550,450)" name="Digit Register"/>
-    <comp loc="(770,450)" name="Input Register"/>
-    <wire from="(230,320)" to="(590,320)"/>
-    <wire from="(230,330)" to="(300,330)"/>
-    <wire from="(230,360)" to="(280,360)"/>
-    <wire from="(230,390)" to="(240,390)"/>
-    <wire from="(240,370)" to="(240,390)"/>
-    <wire from="(240,370)" to="(260,370)"/>
-    <wire from="(260,370)" to="(260,410)"/>
-    <wire from="(260,370)" to="(320,370)"/>
-    <wire from="(260,480)" to="(260,580)"/>
-    <wire from="(260,480)" to="(280,480)"/>
-    <wire from="(260,580)" to="(280,580)"/>
-    <wire from="(280,360)" to="(280,410)"/>
-    <wire from="(280,360)" to="(340,360)"/>
-    <wire from="(300,330)" to="(300,410)"/>
-    <wire from="(300,330)" to="(360,330)"/>
-    <wire from="(320,370)" to="(320,410)"/>
-    <wire from="(320,370)" to="(380,370)"/>
-    <wire from="(320,480)" to="(320,580)"/>
-    <wire from="(320,480)" to="(340,480)"/>
-    <wire from="(320,580)" to="(340,580)"/>
-    <wire from="(340,360)" to="(340,410)"/>
-    <wire from="(340,360)" to="(400,360)"/>
-    <wire from="(360,330)" to="(360,410)"/>
-    <wire from="(360,330)" to="(420,330)"/>
-    <wire from="(380,370)" to="(380,410)"/>
-    <wire from="(380,370)" to="(440,370)"/>
-    <wire from="(380,480)" to="(380,580)"/>
-    <wire from="(380,480)" to="(400,480)"/>
-    <wire from="(380,580)" to="(400,580)"/>
-    <wire from="(400,360)" to="(400,410)"/>
-    <wire from="(400,360)" to="(460,360)"/>
-    <wire from="(420,330)" to="(420,410)"/>
-    <wire from="(420,330)" to="(480,330)"/>
-    <wire from="(440,370)" to="(440,410)"/>
-    <wire from="(440,370)" to="(500,370)"/>
-    <wire from="(440,480)" to="(440,580)"/>
-    <wire from="(440,480)" to="(460,480)"/>
-    <wire from="(440,580)" to="(460,580)"/>
-    <wire from="(460,360)" to="(460,410)"/>
-    <wire from="(460,360)" to="(520,360)"/>
-    <wire from="(480,330)" to="(480,410)"/>
-    <wire from="(480,330)" to="(540,330)"/>
-    <wire from="(500,370)" to="(500,410)"/>
-    <wire from="(500,370)" to="(570,370)"/>
-    <wire from="(500,480)" to="(500,580)"/>
-    <wire from="(500,480)" to="(520,480)"/>
-    <wire from="(500,580)" to="(520,580)"/>
-    <wire from="(520,360)" to="(520,410)"/>
-    <wire from="(520,360)" to="(580,360)"/>
-    <wire from="(540,330)" to="(540,410)"/>
-    <wire from="(540,330)" to="(560,330)"/>
-    <wire from="(560,330)" to="(560,410)"/>
-    <wire from="(570,370)" to="(570,410)"/>
-    <wire from="(580,360)" to="(580,410)"/>
-    <wire from="(590,320)" to="(590,410)"/>
-    <wire from="(690,380)" to="(690,390)"/>
-  </circuit>
   <circuit name="Input Register">
     <a name="appearance" val="custom"/>
     <appear>
@@ -291,6 +194,7 @@
     <comp lib="1" loc="(1620,230)" name="Pin">
       <a name="facing" val="west"/>
       <a name="label" val="Carry In"/>
+      <a name="labelloc" val="east"/>
     </comp>
     <comp lib="1" loc="(220,160)" name="Pin">
       <a name="facing" val="south"/>
